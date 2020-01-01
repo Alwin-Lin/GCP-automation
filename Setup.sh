@@ -5,6 +5,8 @@ cd tar
 gcloud builds submit — config=cloudbuild.yaml
 cd ../android
 gcloud builds submit — config=cloudbuild-ndk.yaml — substitutions=_ANDROID_VERSION=29
+gsutil mb gs://apk-ci-GCPApk
+gsutil mb gs://apk-ci-GCPTemp
 gcloud config set project cloudBuildWS
 mkdir ~/cloudBuildWS
 cd ~/cloudBuildWS
