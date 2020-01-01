@@ -1,0 +1,11 @@
+Context
+	File.1 Background setup
+		This sets up the envroment
+			Android SDK
+			Tar 
+			Output storage location
+			Clones project from Github to GCP
+	File.2 Makes a config file
+		This will add a config file to the project
+	File.3 Test local build
+		Makes sure that the setup is correct
