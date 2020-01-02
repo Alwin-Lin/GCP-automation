@@ -6,7 +6,14 @@ Template file. This contains google cloud build config, put this into the projec
 
 #1. Create project
 #2. Grant project access to cloud storage
-#3. Assign output storage location in the bash file by swaping out apk-ci-GCPApk and apk-ci-GCPTemp
-#4. Run bash file
-#5. clone cloudbuil.yaml into the git project
-#6. Run local build
+#3. Set project ID in cloud shell
+#4. Modify Setup.sh:
+
+Line8,9: Change the names apk-ci-gcpapk and apk-ci-gcptemp 
+Line 12: Change the URL to target project
+Line 14: Change the location to your project location
+Line 15: Change the location to your project location
+Line 16: Change names apk-ci-gcpapk and apk-ci-gcptemp to match line 8 and 9
+
+#5. Run bash script Setup.sh
+#6. Set up auto trigger
