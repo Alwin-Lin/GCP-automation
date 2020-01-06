@@ -10,8 +10,8 @@ echo "Chose Android Version"
 read number
 gcloud builds submit --config=cloudbuild-$version.yaml --substitutions=_ANDROID_VERSION=$number
 echo "Name your artifact bucket"
-read bucket
-gsutil mb gs://$bucket
+read apk
+gsutil mb gs://$apk
 echo "Name your cache bucket"
 read cache
 gsutil mb gs://$cache
