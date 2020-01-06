@@ -4,6 +4,14 @@ cd cloud-builders-community
 cd tar
 gcloud builds submit --config=cloudbuild.yaml
 cd ../android
-gcloud builds submit --config=cloudbuild-ndk.yaml --substitutions=_ANDROID_VERSION=29
-gsutil mb gs://apk-ci-gcpapk
-gsutil mb gs://apk-ci-gcptemp
+echo "ndk or sdk?"
+read version
+echo "Chose Android Version"
+read number
+gcloud builds submit --config=cloudbuild-$version.yaml --substitutions=_ANDROID_VERSION=$number
+echo "Name your artifact bucket"
+read bucket
+gsutil mb gs://$bucket
+echo "Name your cache bucket"
+read cache
+gsutil mb gs://$cache
