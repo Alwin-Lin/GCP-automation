@@ -1,6 +1,10 @@
 cd ~/cloudBuildWS
-git clone https://github.com/Alwin-Lin/performance-samples.git
+echo "Paste your github project link"
+read $link
+git clone $link
 cd ../GCP-automation/Template
-cp cloudbuild.yaml /home/alwin001/cloudBuildWS/performance-samples/BenchmarkSample/
-cd ~/cloudBuildWS/performance-samples/BenchmarkSample/
-cloud-build-local --dryrun=false --substitutions=_CACHE_BUCKET=apk-ci-gcptemp,_ARTIFACT_BUCKET=apk-ci-gcpapk cloudbuild.yaml
+echo "Paste path to project"
+read $pathToProject
+cp cloudbuild.yaml $pathToProject
+cd ~$pathToProject
+cloud-build-local --dryrun=false --substitutions=_CACHE_BUCKET=$cache,_ARTIFACT_BUCKET=$apk cloudbuild.yaml
