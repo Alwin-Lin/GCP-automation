@@ -1,4 +1,4 @@
-This is a collection of tools to help you setup your android app project for continuous build by google cloud build
+This is a collection of tools to help you setup your android app project for continuous build <a href="http://www.quora.com/Adam-DAngelo">Quora profile link for Adam D'Angelo</a> by google cloud build
 
 #1. Create project and grant acces to cloud storage
 
@@ -15,3 +15,6 @@ Setup.sh: This creates android SDK and tar image, as well as assing google cloud
 cloneFromGit.sh: This adds cloudbuild config to your project and validates by running a local build
 
 Template file. This contains google cloud build config, this will be coppied to the project folder
+
+
+On setting up auto trigger:
