@@ -10,7 +10,7 @@ This is a collection of tools to help you setup your android app project for  <a
 
 #5 Push a change onto GitHub to check if everything works
 
-Few files in this
+What each files do 
 
 setup.sh: This creates android SDK and tar image, as well as assing google cloud storage
 
