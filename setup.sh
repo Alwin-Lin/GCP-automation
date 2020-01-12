@@ -36,5 +36,5 @@ if [[ -z "$CACHE_BUCKET_NAME" ]]; then
 fi
 echo "Creating bucket for cache : $CACHE_BUCKET_NAME"
 
-gsutil mb gs://$APK_BUCKET_NAME
-gsutil mb gs://$CACHE_BUCKET_NAME
+gsutil mb -p gs://$APK_BUCKET_NAME
+gsutil mb -p gs://$CACHE_BUCKET_NAME
