@@ -28,9 +28,11 @@ echo "Setting up cloud storage for cache and apk"
 
 if [[ -z "$apk" ]]; then
  apk=$HOSTNAME apk
+fi
 
 if [[ -z "$cache" ]]; then
  cache=$HOSTNAME cache
-
+fi
+echo "APK is stored in $apk , cache is stored in $cache"
 gsutil mb gs://$apk
 gsutil mb gs://$cache
