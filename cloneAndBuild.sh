@@ -1,12 +1,16 @@
 echo "Cloning GitHub project"
 cd ~/cloudBuildWS
 echo "Paste your github project link"
-read $link
-git clone $link
+read $url
+git clone $url
 
 echo "adding cloud config to project"
 cd ../GCP-automation/Template
-$PATH_TO_PROJECT= "~/cloudBuildWS/$link
+
+echo "getting file location"
+wholeFile = ${url##*/}
+fileName = ${wholeFile%.*}
+$PATH_TO_PROJECT= "~/cloudBuildWS/$fileName
 cp cloudbuild.yaml $PATH_TO_PROJECT
 
 echo "Starting test build"
