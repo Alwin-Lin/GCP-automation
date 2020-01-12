@@ -25,7 +25,15 @@ Links Google cloud build to GitHub
 ### Template
 Contains google cloud build config, this will be coppied to the project folder
 
-## What to run
+## What to run and how
 If this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation.sh
- 
+```
+bash setup.sh
+```
+```
+bash cloneAndBuild.sh
+```
+```
+bash triggerCreation.sh
+```
 If you just want to clone project and build, cloneAndBuild.sh
