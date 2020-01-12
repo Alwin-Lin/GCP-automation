@@ -26,13 +26,15 @@ fi
 
 echo "Setting up cloud storage for cache and apk"
 
-if [[ -z "$apk" ]]; then
- apk=$HOSTNAME apk
+if [[ -z "$APK_BUCKET_NAME" ]]; then
+ APK_BUCKET_NAME="$HOSTNAME_apk"
 fi
+echo "Creating bucket for APK: $apk"
 
-if [[ -z "$cache" ]]; then
- cache=$HOSTNAME cache
+if [[ -z "$CACHE_BUCKET_NAME" ]]; then
+ CACHE_BUCKET_NAME="$HOSTNAME_cache"
 fi
-echo "APK is stored in $apk , cache is stored in $cache"
+echo "Creating bucket for cache : $cache"
+
 gsutil mb gs://$apk
 gsutil mb gs://$cache
