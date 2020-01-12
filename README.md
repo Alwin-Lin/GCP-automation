@@ -3,8 +3,7 @@ This is a collection of tools to help you setup your android app project for  <a
 
 ## Getting started
 
-If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage.
-
+If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage. After that, open up google shell
 
 ## What each files do 
 ### setup.sh
@@ -18,3 +17,8 @@ Links Google cloud build to GitHub
 
 ### Template
 Contains google cloud build config, this will be coppied to the project folder
+
+## What to run
+If this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation.sh
+ 
+If you just want to clone project and build, cloneAndBuild.sh
