@@ -1,5 +1,4 @@
 echo "Creating trigger for GitHub"
-echo "All hail our Robot overloards"
 gcloud beta builds triggers create github \
 echo "Input name of github reposetory"
 read $REPO_NAME
