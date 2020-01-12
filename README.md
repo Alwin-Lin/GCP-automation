@@ -32,6 +32,8 @@ This requires you to input the project that you want to clone
 ### triggerCreation.sh
 Links Google cloud build to GitHub so that it auto builds whenever there is a new commit
 
+work in progress
+
 ### Template
 Contains google cloud build config, this will be coppied to the project folder
 
