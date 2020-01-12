@@ -1,27 +1,17 @@
-This is a collection of bash files to help with setting up continuous build on google cloud
+This is a collection of tools to help you setup your android app project for continuous build by google cloud build
 
-File.1 Background setup. This inclues :Android SDK, Tar, Output storage location, Clones project from Github to GCP
+#1. Create project and grant acces to cloud storage
 
-Template file. This contains google cloud build config, put this into the project folder
+#2. Run setup.sh
 
-#1. Create project
+#3. Run cloneAndBuild.sh
 
-#2. Grant project access to cloud storage
+#4. Set up auto trigger
 
-#3. Set project ID in cloud shell
+Few files in this
 
-#4. Modify Setup.sh:
+Setup.sh: This creates android SDK and tar image, as well as assing google cloud storage
 
-Line8,9: Change the names apk-ci-gcpapk and apk-ci-gcptemp 
+cloneFromGit.sh: This adds cloudbuild config to your project and validates by running a local build
 
-Line 12: Change the URL to target project
-
-Line 14: Change the location to your project location
-
-Line 15: Change the location to your project location
-
-Line 16: Change names apk-ci-gcpapk and apk-ci-gcptemp to match line 8 and 9
-
-#5. Run bash script Setup.sh
-
-#6. Set up auto trigger
+Template file. This contains google cloud build config, this will be coppied to the project folder
