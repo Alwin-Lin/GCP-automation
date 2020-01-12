@@ -27,6 +27,8 @@ Change as you see fit
 ### cloneAndBuild.sh
 Clones your Github Project and adds cloudbuild config to the file, then validates by running a local build
 
+This requires you to input the project that you want to clone
+
 ### triggerCreation.sh
 Links Google cloud build to GitHub so that it auto builds whenever there is a new commit
 
