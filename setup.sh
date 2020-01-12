@@ -20,20 +20,17 @@ fi
 echo "Android image type is $ANDROID_SDK_API_LEVEL"
 
 if [ $ANDROID_SDK_IMAGE_TYPE = "SDK" ]
-then gcloud builds submit --config=cloudbuild.yaml
-else gcloud builds submit --config=cloudbuild-ndk.yaml
+then gcloud builds submit --config=cloudbuild.yaml --substitutions=_ANDROID_VERSION=$ANDROID_SDK_API_LEVEL
+else gcloud builds submit --config=cloudbuild-ndk.yaml --substitutions=_ANDROID_VERSION=$ANDROID_SDK_API_LEVEL
 fi
-
-if [ ANDROID_SDK_API_LEVEL=28 ]
-then gcloud builds submit --substitutions=_ANDROID_VERSION=28
-else gcloud builds submit --substitutions=_ANDROID_VERSION=$ANDROID_SDK_API_LEVEL
-fi
-
 
 echo "Setting up cloud storage for cache and apk"
-echo "Name your artifact bucket"
-read apk
+
+if [[ -z "$apk" ]]; then
+ apk=$HOSTNAME apk
+
+if [[ -z "$cache" ]]; then
+ cache=$HOSTNAME cache
+
 gsutil mb gs://$apk
-echo "Name your cache bucket"
-read cache
 gsutil mb gs://$cache
