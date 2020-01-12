@@ -13,8 +13,9 @@ git clone https://github.com/Alwin-Lin/GCP-automation.git
 cd GCP-automation
 ```
 ## What each files do 
+These scripts are designed for google shell
 ### setup.sh
-Creates android SDK and tar image, as well as assing google cloud storage.
+Creates android SDK and tar image, as well as create google cloud storage.
 
 ### cloneAndBuild.sh
 Clones your Github Project and adds cloudbuild config to the file, then validates by running a local build
