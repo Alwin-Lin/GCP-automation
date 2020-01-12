@@ -14,7 +14,7 @@ What each files do
 
 setup.sh: This creates android SDK and tar image, as well as assing google cloud storage
 
-cloneFromGit.sh: This adds cloudbuild config to your project and validates by running a local build
+cloneAndBuild.sh: This adds cloudbuild config to your project and validates by running a local build
 
 triggerCreation.sh: This links Google cloud build to GitHub
 
