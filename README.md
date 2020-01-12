@@ -17,6 +17,13 @@ These scripts are designed for google shell
 ### setup.sh
 Creates android SDK and tar image, as well as create google cloud storage.
 
+The defalt SDK image type is SDK, Android version is 28
+
+Defalt bucket is called gcb_bucket_apk for apk and gcb_bucket_cache for cache
+
+Change as you see fit
+
+
 ### cloneAndBuild.sh
 Clones your Github Project and adds cloudbuild config to the file, then validates by running a local build
 
