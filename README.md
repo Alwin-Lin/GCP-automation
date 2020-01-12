@@ -14,13 +14,13 @@ Push a change onto GitHub to check if everything works
 
 ## What each files do 
 ### setup.sh
-This creates android SDK and tar image, as well as assing google cloud storage
+Creates android SDK and tar image, as well as assing google cloud storage
 
 ### cloneAndBuild.sh
-This adds cloudbuild config to your project and validates by running a local build
+Adds cloudbuild config to your project and validates by running a local build
 
 ### triggerCreation.sh
-This links Google cloud build to GitHub
+Links Google cloud build to GitHub
 
 ### Template
-This contains google cloud build config, this will be coppied to the project folder
+Contains google cloud build config, this will be coppied to the project folder
