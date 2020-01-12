@@ -1,4 +1,4 @@
-This is a collection of tools to help you setup your android app project for continuous build <a href="http://www.quora.com/Adam-DAngelo">Quora profile link for Adam D'Angelo</a> by google cloud build
+This is a collection of tools to help you setup your android app project for  <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous build</a> by google cloud build
 
 #1. Create project and grant acces to cloud storage
 
