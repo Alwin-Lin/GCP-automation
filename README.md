@@ -10,7 +10,7 @@ Open up google shell and clone this project
 git clone https://github.com/Alwin-Lin/GCP-automation.git
 ```
 ```
-cd GCP-automation.git
+cd GCP-automation
 ```
 ## What each files do 
 ### setup.sh
