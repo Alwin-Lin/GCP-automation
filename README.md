@@ -3,21 +3,15 @@ This is a collection of tools to help you setup your android app project for  <a
 
 ## Getting started
 
-If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage 
+If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage.
 
-Run setup.sh
-
-Run cloneAndBuild.sh
-Run triggerCreation.sh
-
-Push a change onto GitHub to check if everything works
 
 ## What each files do 
 ### setup.sh
-Creates android SDK and tar image, as well as assing google cloud storage
+Creates android SDK and tar image, as well as assing google cloud storage.
 
 ### cloneAndBuild.sh
-Adds cloudbuild config to your project and validates by running a local build
+Clones your Github Project and adds cloudbuild config to the file, then validates by running a local build
 
 ### triggerCreation.sh
 Links Google cloud build to GitHub
