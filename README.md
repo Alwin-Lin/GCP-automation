@@ -3,8 +3,12 @@ This is a collection of tools to help you setup your android app project for  <a
 
 ## Getting started
 
-If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage. After that, open up google shell
+If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage.
 
+After that, open up google shell
+```
+git clone https://github.com/Alwin-Lin/GCP-automation.git
+```
 ## What each files do 
 ### setup.sh
 Creates android SDK and tar image, as well as assing google cloud storage.
