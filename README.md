@@ -3,7 +3,7 @@ This is a collection of tools to help you setup your android app project for  <a
 
 ## Getting started
 
-#1. Create project and grant acces to cloud storage
+#1. <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage 
 
 #2. Run setup.sh
 
