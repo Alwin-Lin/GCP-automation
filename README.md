@@ -49,3 +49,5 @@ bash cloneAndBuild.sh
 bash triggerCreation.sh
 ```
 If you just want to clone project and build, cloneAndBuild.sh
+### Before your run triggerCreation.sh
+It is important that you have <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers">connected to github repositories</a> or else this will not work at all
