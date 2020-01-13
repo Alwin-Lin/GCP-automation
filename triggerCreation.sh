@@ -14,9 +14,9 @@ NAME_FILE=${NAME_AND_OWNER#*/}
 NAME=${NAME_FILE%.*}
 OWNER=${NAME_AND_OWNER##*/}
 
---repo-name=[$NAME] \
+--repo-name=$NAME \
 echo "reposetory named as $NAME"
---repo-owner=[$OWNER] \
+--repo-owner=$OWNER \
 echo "The owner of this is $OWNER"
 --branch-pattern=".*" \
---build-config=[~/GCP-automation/Template/cloudbuild.yaml] \
+--build-config=~/GCP-automation/Template/cloudbuild.yaml \
