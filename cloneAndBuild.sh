@@ -1,14 +1,18 @@
 echo "Cloning GitHub project"
 cd ~/cloudBuildWS
-echo "Paste your github project link"
-read $git_URL
-git clone $git_URL
+
+if [[ -z "${APP_GITHUB_URL}" ]]; then
+  APP_GITHUB_URL="https://github.com/googlecodelabs/android-testing.git"
+fi
+
+echo "Project url is $APP_GITHUB_URL"
+git clone $APP_GITHUB_URL
 
 echo "adding cloud config to project"
 cd ../GCP-automation/Template
 
 echo "getting file location"
-gitProjectName = ${git_URL##*/}
+gitProjectName = ${APP_GITHUB_URL##*/}
 projectName = ${gitProjectName%.*}
 $PATH_TO_PROJECT= "~/cloudBuildWS/$projectName
 
