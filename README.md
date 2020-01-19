@@ -20,7 +20,9 @@ After that, if this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation
 ```
 bash setup.sh
 ```
-### 2. Cloning GitHub project and testing setup by triggereing local build
+### 2. Clone your Android app GitHub project and testing setup by triggereing local build
+#### The script will clone <a href="https://github.com/googlecodelabs/android-testing.git">Android testing sample code</a> as a example
+You can set APP_GITHUB_URL to your GitHub project URL to clone your project.
 ```
 bash cloneAndBuild.sh
 ```
@@ -33,7 +35,6 @@ After that is done:
 ```
 bash triggerCreation.sh
 ```
-If you just want to clone project and build, cloneAndBuild.sh
 
 ## Examples
 Here is a <a href="https://medium.com/@alwin001/continuous-integration-283852c71c02">blog</a> that goes through the complete process from creating a project to setting up a trigger.
