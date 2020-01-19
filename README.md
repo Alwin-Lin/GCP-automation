@@ -12,6 +12,9 @@ git clone https://github.com/Alwin-Lin/GCP-automation.git
 ```
 cd GCP-automation
 ```
+## Examples
+Here is a <a href="https://medium.com/@alwin001/continuous-integration-283852c71c02">blog</a> that goes through the complete process from creating a project to setting up a trigger.
+
 ## What each files do 
 These scripts are designed for google shell
 ### setup.sh
