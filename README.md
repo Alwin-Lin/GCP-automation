@@ -1,9 +1,6 @@
 # GCB-automation
 This is a collection of tools to help you setup your android app project for  <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous build</a> by <a href="https://cloud.google.com/cloud-build/">google cloud build </a>
 
-## Getting started
-
-If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage.
 ## Installing
 Open up google shell and clone this
 ```
@@ -14,6 +11,26 @@ cd GCP-automation
 ```
 ## Examples
 Here is a <a href="https://medium.com/@alwin001/continuous-integration-283852c71c02">blog</a> that goes through the complete process from creating a project to setting up a trigger.
+
+### Getting started
+
+If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage. 
+
+After that, if this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation.sh
+```
+bash setup.sh
+```
+```
+bash cloneAndBuild.sh
+```
+```
+bash triggerCreation.sh
+```
+If you just want to clone project and build, cloneAndBuild.sh
+
+#### Before your run triggerCreation.sh
+It is important that you have <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers">connected to github repositories</a> or else this will not work at all
+
 
 ## What each files do 
 These scripts are designed for google shell
@@ -39,18 +56,3 @@ work in progress
 
 ### Template
 Contains google cloud build config, this will be coppied to the project folder
-
-## What to run and how
-If this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation.sh
-```
-bash setup.sh
-```
-```
-bash cloneAndBuild.sh
-```
-```
-bash triggerCreation.sh
-```
-If you just want to clone project and build, cloneAndBuild.sh
-### Before your run triggerCreation.sh
-It is important that you have <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers">connected to github repositories</a> or else this will not work at all
