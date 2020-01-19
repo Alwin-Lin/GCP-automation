@@ -31,6 +31,9 @@ bash cloneAndBuild.sh
 #### 3.1 Link GCB to your GitHub project
 Follow the instructions <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers"> here</a>
 #### 3.2 Creates a trigger conecting google cloud and github
+This links <a href="https://github.com/googlecodelabs/android-testing.git">Android testing sample code</a> to your GCP.
+
+You can set APP_GITHUB_URL to your GitHub project URL to link your prposetory
 
 After that is done:
 ```
