@@ -15,13 +15,18 @@ cd GCP-automation
 If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new GCP project</a> and grant acces to cloud storage. 
 
 After that, if this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation.sh
+
+### 1. Create android SDK and tar container image
 ```
 bash setup.sh
 ```
+### 2. Cloning GitHub project and testing setup by triggereing local build
 ```
 bash cloneAndBuild.sh
 ```
-### Before your run triggerCreation.sh
+### 3. Linking GCP to GitHub for auto build on commit
+
+#### Before your run triggerCreation.sh
 It is important that you have <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers">connected to github repositories</a> or else this will not work at all.
 
 After that is done:
