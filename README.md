@@ -9,10 +9,8 @@ git clone https://github.com/Alwin-Lin/GCP-automation.git
 ```
 cd GCP-automation
 ```
-## Examples
-Here is a <a href="https://medium.com/@alwin001/continuous-integration-283852c71c02">blog</a> that goes through the complete process from creating a project to setting up a trigger.
 
-### Getting started
+## Getting started
 
 If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage. 
 
@@ -23,19 +21,23 @@ bash setup.sh
 ```
 bash cloneAndBuild.sh
 ```
+### Before your run triggerCreation.sh
+It is important that you have <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers">connected to github repositories</a> or else this will not work at all.
+
+After that is done:
 ```
 bash triggerCreation.sh
 ```
 If you just want to clone project and build, cloneAndBuild.sh
 
-#### Before your run triggerCreation.sh
-It is important that you have <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers">connected to github repositories</a> or else this will not work at all
+## Examples
+Here is a <a href="https://medium.com/@alwin001/continuous-integration-283852c71c02">blog</a> that goes through the complete process from creating a project to setting up a trigger.
 
 
 ## What each files do 
 These scripts are designed for google shell
 ### setup.sh
-Creates android SDK and tar image, as well as create google cloud storage.
+Creates android SDK and tar image, as well as create google cloud storage. This takes care of step 3 and 4 in the example
 
 The defalt SDK image type is SDK, Android version is 28
 
@@ -45,14 +47,14 @@ Change as you see fit
 
 
 ### cloneAndBuild.sh
-Clones your Github Project and adds cloudbuild config to the file, then validates by running a local build
+Clones your Github Project and adds cloudbuild config to the file, then validates by running a local build. This does steps 5~7
 
 This requires you to input the project that you want to clone
 
 ### triggerCreation.sh
-Links Google cloud build to GitHub so that it auto builds whenever there is a new commit
+Links Google cloud build to GitHub so that it auto builds whenever there is a new commit. This takes care of step 8
 
-work in progress
+Again, link your github to google cloud platform or else this will not work
 
 ### Template
 Contains google cloud build config, this will be coppied to the project folder
