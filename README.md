@@ -26,6 +26,10 @@ You can set APP_GITHUB_URL to your GitHub project URL to clone your project.
 ```
 bash cloneAndBuild.sh
 ```
+#### For example if your project is <a href="https://github.com/google/gpu-emulation-stress-test">GPU Emulation Stress Test</a> 
+```
+export APP_GITHUB_URL="https://github.com/google/gpu-emulation-stress-test"
+```
 ### 3. Linking GCP to GitHub for auto build on commit
 
 #### 3.1 Link GCB to your GitHub project
