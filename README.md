@@ -28,8 +28,9 @@ bash cloneAndBuild.sh
 ```
 ### 3. Linking GCP to GitHub for auto build on commit
 
-#### Before your run triggerCreation.sh
-It is important that you have <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers">connected to github repositories</a> or else this will not work at all.
+#### 3.1 Link GCB to your GitHub project
+Follow the instructions <a href="https://cloud.google.com/cloud-build/docs/running-builds/create-manage-triggers"> here</a>
+#### 3.2 Creates a trigger conecting google cloud and github
 
 After that is done:
 ```
