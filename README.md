@@ -16,7 +16,7 @@ If this the first time, <a href="https://cloud.google.com/resource-manager/docs/
 
 After that, if this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation.sh
 
-### 1. Create android SDK and tar container image
+### 1. Create android SDK and tar container images
 ```
 bash setup.sh
 ```
