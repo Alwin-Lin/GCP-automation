@@ -12,7 +12,7 @@ cd GCP-automation
 
 ## Getting started
 
-If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new project</a> and grant acces to cloud storage. 
+If this the first time, <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">Create a new GCP project</a> and grant acces to cloud storage. 
 
 After that, if this is first time, run setup.sh>cloneAndBuild.sh>triggerCreation.sh
 ```
